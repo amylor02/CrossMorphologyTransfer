@@ -83,6 +83,18 @@ python src_ortho_new\reproduce_paper_metrics.py
 
 The script uses the reference datasets in `data/` and the evaluation motions in `metric_inputs/`. To request these inputs, contact [alexymlordos@gmail.com](mailto:alexymlordos@gmail.com)
 
+## Scripts for Generating Motions
+
+After installing the dependencies, extracting the pretrained models, and obtaining the required BVH inputs, run any of these parameter-free PowerShell scripts from the `python/` directory:
+
+```powershell
+.\generate_dog_from_human.ps1
+.\generate_human_from_dog.ps1
+.\generate_dog_from_ostrich_fc.ps1
+```
+
+The scripts use the fixed inference settings shown in the section below and save the generated BVH files to `python/results/`. Run them one at a time.
+
 ## Usage Examples
 
 Run the following commands from the `python/` directory.
