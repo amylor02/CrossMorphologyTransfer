@@ -44,7 +44,7 @@ The pretrained models are available in `pretrained_models.zip` on the [GitHub Re
 
 Download the archive and extract its `models/` directory into `python/`.
 
-The datasets and quantitative evaluation inputs are not publicly distributed. **To request access, contact [alexymlordos@gmail.com](mailto:alexymlordos@gmail.com).** Availability of third-party data is subject to the applicable licenses.
+The datasets and quantitative evaluation inputs are not publicly distributed. **To request access, contact [alexmylordos@gmail.com](mailto:alexmylordos@gmail.com).** Availability of third-party data is subject to the applicable licenses.
 
 After obtaining the files, the `python/` directory should be organized as follows:
 
@@ -81,7 +81,7 @@ To reproduce the motion fidelity metrics in **Table I** and the contact-phase me
 python src_ortho_new\reproduce_paper_metrics.py
 ```
 
-The script uses the reference datasets in `data/` and the evaluation motions in `metric_inputs/`. To request these inputs, contact [alexymlordos@gmail.com](mailto:alexymlordos@gmail.com)
+The script uses the reference datasets in `data/` and the evaluation motions in `metric_inputs/`. To request these inputs, contact [alexmylordos@gmail.com](mailto:alexmylordos@gmail.com)
 
 ## Scripts for Generating Motions
 
