@@ -1,0 +1,18 @@
+Title:
+Cross-Morphology Motion Transfer with Semantic Style Alignment
+
+Authors:
+Alexios Mylordos
+Jose Luis Ponton
+Nuria Pelechano
+Andreas Aristidou
+
+Operating System:
+Windows 11 (64-bit)
+
+Environment:
+Python 3.11.5
+PyTorch 2.1.0 + CUDA 12.1
+
+Installation and reproduction instructions:
+See README.md.
