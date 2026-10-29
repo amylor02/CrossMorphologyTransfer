@@ -1,0 +1,12 @@
+{
+  "default_scalar": 1.0,
+  "pair_scalars": {
+    "human_param": {
+      "dog_param": 1.8,
+      "ostrich_param": 1.5
+    },
+    "dog_param": {
+      "human_param": 0.5555555555555556
+    }
+  }
+}

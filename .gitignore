@@ -1,0 +1,32 @@
+# Downloadable datasets, models, and release archives
+python/data/
+python/models/
+release_assets/
+
+# Local environments
+.venv/
+python/.venv/
+env/
+venv/
+
+# Generated outputs
+python/results/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+#
+python/metric_inputs/
+python/quant/
+release_assets/

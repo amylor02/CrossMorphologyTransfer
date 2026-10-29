@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "upc-pymotion"
+# local label marks this as the sparseposer-modified build of 0.0.1
+version = "0.0.1+sparseposer.1"
+description = "A Python library for working with motion data in numpy or PyTorch (modified build, see NOTICE)."
+license = "CC-BY-SA-4.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Jose Luis Ponton", email = "jose.luis.ponton@upc.edu" }]
+# torch and scipy are imported at module level by the modified source
+# (rotations/quat.py imports both), so they are required rather than optional
+dependencies = [
+    "numpy>=1.21.6",
+    "scipy",
+    "torch",
+]
+
+[project.urls]
+Homepage = "https://github.com/UPC-ViRVIG/pymotion"
+
+[tool.setuptools.packages.find]
+include = ["pymotion", "pymotion.*"]

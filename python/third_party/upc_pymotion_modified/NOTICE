@@ -1,0 +1,28 @@
+# NOTICE: modified PyMotion
+
+This directory contains a modified copy of PyMotion, distributed as `upc-pymotion`. SparsePoser vendors it so the project does not depend on the unmodified PyPI release. It is not the upstream release.
+
+## Original work
+
+- Project: PyMotion
+- Upstream: https://github.com/UPC-ViRVIG/pymotion
+- Author: Jose Luis Ponton <jose.luis.ponton@upc.edu>
+- Upstream version: 0.0.1 (PyPI `upc-pymotion==0.0.1`)
+- Upstream commit: `0105954`
+- License: Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). The `LICENSE` file here is the copy shipped with the `upc-pymotion` 0.0.1 wheel, unchanged.
+
+## Modifications
+
+The following files differ from the `upc-pymotion` 0.0.1 wheel. The other source files are identical to it.
+
+- `pymotion/io/bvh.py`
+- `pymotion/ops/skeleton.py`
+- `pymotion/ops/skeleton_torch.py`
+- `pymotion/rotations/dual_quat.py`
+- `pymotion/rotations/dual_quat_torch.py`
+- `pymotion/rotations/ortho6d.py`
+- `pymotion/rotations/ortho6d_torch.py`
+- `pymotion/rotations/quat.py`
+- `pymotion/rotations/quat_torch.py`
+
+This build is versioned `0.0.1+sparseposer.1`.
