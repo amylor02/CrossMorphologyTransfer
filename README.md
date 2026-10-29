@@ -147,6 +147,26 @@ python src_ortho_new\eval_vq_vae.py `
 
 Generated BVH files are saved under `python/data/` with an `eval_` prefix.
 
+## Training from scratch
+
+- **Script:** `python/src_ortho_new/train_vq_vae.py`
+- **Datasets:** `data/{dog,human,ostrich}/{train,eval}/` (BVH)
+- **Stages:** VQ-VAE training, recurrent prior training
+- **Hyperparameters:** Defined per morphology in `train_vq_vae.py`.
+
+Example (Dog, from `python/`):
+
+```powershell
+# Stage 1: Autoencoder
+python src_ortho_new\train_vq_vae.py .\data\dog example generator --training-stage autoencoder
+
+# Stage 2: Prior
+python src_ortho_new\train_vq_vae.py .\data\dog example generator --training-stage prior --load --reset-prior
+```
+
+- **Foot-contact conditioning instead of velocity:** Add `--foot-contact-conditioning` during prior training.
+- **Outputs:** `models/model_example_dog/` (`generator.pt`, `data.pt`).
+
 ## License and Acknowledgments
 
 The code is distributed under the [MIT License](LICENSE). The original SparsePoser license terms for model weights and data are included in [LICENSE_data](LICENSE_data). Third-party datasets and assets remain subject to their respective licenses.
